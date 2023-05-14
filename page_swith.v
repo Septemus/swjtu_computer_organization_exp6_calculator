@@ -15,15 +15,10 @@ module page_switch(
 	begin
 		status<=2'b00;
 	end
-	//always@(negedge switch_buttons[0] or negedge switch_buttons[1] or negedge switch_buttons[2])
 	always@(posedge clk)
 	begin
 		//N<={R0,R1,R2,R3};
 		casex(switch_buttons)
-			//3'b111: N<=N;
-//			3'bxx0: N<={R0,R1,R2,R3};
-//			3'bx01: N<={24'h000000,pc};
-//			3'b011: N<=alu_N;
 			3'bxx0: status<=2'b00;
 			3'bx01: status<=2'b01;
 			3'b011: status<=2'b10;
@@ -34,18 +29,5 @@ module page_switch(
 			2'b01:N<={24'h000000,pc};
 			2'b10:N<=alu_N;
 		endcase
-//		case(status)
-//			2'b00:N<={R0,R1,R2,R3};
-//			2'b01:N<={24'h000000,pc};
-//			2'b10:N<=alu_N;
-//		endcase
 	end
-//	always
-//	begin
-//		case(status)
-//			2'b00:N<={R0,R1,R2,R3};
-//			2'b01:N<={24'h000000,pc};
-//			2'b10:N<=alu_N;
-//		endcase
-//	end
 endmodule
