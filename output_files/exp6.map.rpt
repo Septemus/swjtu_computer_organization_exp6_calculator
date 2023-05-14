@@ -1,5 +1,5 @@
 Analysis & Synthesis report for exp6
-Sun May 14 17:08:58 2023
+Sun May 14 18:00:00 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,15 +13,13 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "exp5:inst21|reg_function:rf"
- 13. Port Connectivity Checks: "exp5:inst21|pc_function:pf"
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
- 16. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "exp5:inst21|reg_function:rf"
+ 11. Port Connectivity Checks: "exp5:inst21|pc_function:pf"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,16 +45,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 14 17:08:58 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 14 18:00:00 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; exp6                                        ;
 ; Top-level Entity Name              ; exp6                                        ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; 401                                         ;
-;     Total combinational functions  ; 353                                         ;
-;     Dedicated logic registers      ; 206                                         ;
-; Total registers                    ; 206                                         ;
-; Total pins                         ; 42                                          ;
+; Total logic elements               ; 160                                         ;
+;     Total combinational functions  ; 112                                         ;
+;     Dedicated logic registers      ; 82                                          ;
+; Total registers                    ; 82                                          ;
+; Total pins                         ; 78                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -168,24 +166,20 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                     ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
-; segment_displays.v               ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/segment_displays.v ;         ;
-; count_second.v                   ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/count_second.v     ;         ;
-; key_module.v                     ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/key_module.v       ;         ;
-; pc_function.v                    ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/pc_function.v      ;         ;
-; reg_function.v                   ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/reg_function.v     ;         ;
-; exp5.v                           ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/exp5.v             ;         ;
-; exp4.v                           ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/exp4.v             ;         ;
-; midware.v                        ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/midware.v          ;         ;
-; manipulate.v                     ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/manipulate.v       ;         ;
-; exp6.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Computer_Organization/exp6/exp6.bdf           ;         ;
-; choose_opts.v                    ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/choose_opts.v      ;         ;
-; page_swith.v                     ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/page_swith.v       ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
+; pc_function.v                    ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/pc_function.v  ;         ;
+; reg_function.v                   ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/reg_function.v ;         ;
+; exp5.v                           ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/exp5.v         ;         ;
+; exp4.v                           ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/exp4.v         ;         ;
+; midware.v                        ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/midware.v      ;         ;
+; manipulate.v                     ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/manipulate.v   ;         ;
+; exp6.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Computer_Organization/exp6/exp6.bdf       ;         ;
+; choose_opts.v                    ; yes             ; User Verilog HDL File              ; C:/Computer_Organization/exp6/choose_opts.v  ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -193,60 +187,46 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 401       ;
+; Estimated Total logic elements              ; 160       ;
 ;                                             ;           ;
-; Total combinational functions               ; 353       ;
+; Total combinational functions               ; 112       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 129       ;
-;     -- 3 input functions                    ; 81        ;
-;     -- <=2 input functions                  ; 143       ;
+;     -- 4 input functions                    ; 44        ;
+;     -- 3 input functions                    ; 40        ;
+;     -- <=2 input functions                  ; 28        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 275       ;
-;     -- arithmetic mode                      ; 78        ;
+;     -- normal mode                          ; 96        ;
+;     -- arithmetic mode                      ; 16        ;
 ;                                             ;           ;
-; Total registers                             ; 206       ;
-;     -- Dedicated logic registers            ; 206       ;
+; Total registers                             ; 82        ;
+;     -- Dedicated logic registers            ; 82        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 42        ;
+; I/O pins                                    ; 78        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 206       ;
-; Total fan-out                               ; 1738      ;
-; Average fan-out                             ; 2.70      ;
+; Maximum fan-out                             ; 82        ;
+; Total fan-out                               ; 763       ;
+; Average fan-out                             ; 2.18      ;
 +---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
-; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Library Name ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
-; |exp6                       ; 353 (0)           ; 206 (0)      ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |exp6                             ; work         ;
-;    |choose_opts:inst18|     ; 23 (23)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|choose_opts:inst18          ; work         ;
-;    |exp4:inst22|            ; 61 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22                 ; work         ;
-;       |manipulate:man|      ; 61 (61)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22|manipulate:man  ; work         ;
-;       |midware:mw|          ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22|midware:mw      ; work         ;
-;    |exp5:inst21|            ; 81 (0)            ; 72 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21                 ; work         ;
-;       |count_second:cs|     ; 50 (50)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21|count_second:cs ; work         ;
-;       |pc_function:pf|      ; 19 (19)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21|pc_function:pf  ; work         ;
-;       |reg_function:rf|     ; 12 (12)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21|reg_function:rf ; work         ;
-;    |keymodule:inst|         ; 122 (122)         ; 51 (51)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|keymodule:inst              ; work         ;
-;    |page_switch:inst20|     ; 36 (36)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|page_switch:inst20          ; work         ;
-;    |segment_displays:inst1| ; 30 (30)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|segment_displays:inst1      ; work         ;
-+-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
+; |exp6                      ; 112 (0)           ; 82 (0)       ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |exp6                             ; work         ;
+;    |choose_opts:inst18|    ; 23 (23)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|choose_opts:inst18          ; work         ;
+;    |exp4:inst22|           ; 61 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22                 ; work         ;
+;       |manipulate:man|     ; 61 (61)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22|manipulate:man  ; work         ;
+;       |midware:mw|         ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp4:inst22|midware:mw      ; work         ;
+;    |exp5:inst21|           ; 28 (0)            ; 40 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21                 ; work         ;
+;       |pc_function:pf|     ; 16 (16)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21|pc_function:pf  ; work         ;
+;       |reg_function:rf|    ; 12 (12)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp6|exp5:inst21|reg_function:rf ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; exp4:inst22|manipulate:man|ans[9..15] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 7 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -254,25 +234,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 206   ;
+; Total registers                              ; 82    ;
 ; Number of registers using Synchronous Clear  ; 6     ;
-; Number of registers using Synchronous Load   ; 38    ;
+; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 140   ;
+; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; keymodule:inst|num[4]                  ; 1       ;
-; keymodule:inst|count_num[0]            ; 4       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -280,18 +249,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |exp6|page_switch:inst20|N[15]          ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; Yes        ; |exp6|page_switch:inst20|N[30]          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |exp6|page_switch:inst20|N[2]           ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |exp6|keymodule:inst|count_num[30]      ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |exp6|segment_displays:inst1|num[0]     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |exp6|exp5:inst21|pc_function:pf|PC[6]  ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |exp6|exp4:inst22|manipulate:man|ans[6] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |exp6|exp5:inst21|reg_function:rf|R1[0] ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |exp6|page_switch:inst20|status[1]      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |exp6|keymodule:inst|out[5]             ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |exp6|exp5:inst21|pc_function:pf|PC[0]  ;
-; 21:1               ; 16 bits   ; 224 LEs       ; 48 LEs               ; 176 LEs                ; Yes        ; |exp6|choose_opts:inst18|opt1[3]        ;
-; 257:1              ; 4 bits    ; 684 LEs       ; 48 LEs               ; 636 LEs                ; No         ; |exp6|keymodule:inst|num                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |exp6|exp5:inst21|reg_function:rf|R2[6] ;
+; 21:1               ; 16 bits   ; 224 LEs       ; 48 LEs               ; 176 LEs                ; Yes        ; |exp6|choose_opts:inst18|opt2[7]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
@@ -318,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -328,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun May 14 17:08:53 2023
+    Info: Processing started: Sun May 14 17:59:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exp6 -c exp6
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file segment_displays.v
@@ -357,6 +318,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file page_sw
     Info (12023): Found entity 1: page_switch
 Warning (10236): Verilog HDL Implicit Net warning at exp4.v(20): created implicit net for "N"
 Info (12127): Elaborating entity "exp6" for the top level hierarchy
+Warning (275009): Pin "switch_buttons" not connected
 Info (12128): Elaborating entity "exp4" for hierarchy "exp4:inst22"
 Warning (10036): Verilog HDL or VHDL warning at exp4.v(20): object "N" assigned a value but never read
 Warning (10230): Verilog HDL assignment warning at exp4.v(20): truncated value with size 32 to match size of target (1)
@@ -365,31 +327,27 @@ Info (12128): Elaborating entity "manipulate" for hierarchy "exp4:inst22|manipul
 Warning (10230): Verilog HDL assignment warning at manipulate.v(28): truncated value with size 47 to match size of target (16)
 Info (12128): Elaborating entity "choose_opts" for hierarchy "choose_opts:inst18"
 Info (12128): Elaborating entity "exp5" for hierarchy "exp5:inst21"
-Info (12128): Elaborating entity "count_second" for hierarchy "exp5:inst21|count_second:cs"
 Info (12128): Elaborating entity "pc_function" for hierarchy "exp5:inst21|pc_function:pf"
 Warning (10230): Verilog HDL assignment warning at pc_function.v(15): truncated value with size 32 to match size of target (8)
 Warning (10230): Verilog HDL assignment warning at pc_function.v(19): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "reg_function" for hierarchy "exp5:inst21|reg_function:rf"
-Info (12128): Elaborating entity "keymodule" for hierarchy "keymodule:inst"
-Warning (10230): Verilog HDL assignment warning at key_module.v(22): truncated value with size 16 to match size of target (8)
-Info (12128): Elaborating entity "segment_displays" for hierarchy "segment_displays:inst1"
-Warning (10230): Verilog HDL assignment warning at segment_displays.v(9): truncated value with size 32 to match size of target (3)
-Info (12128): Elaborating entity "page_switch" for hierarchy "page_switch:inst20"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "codeout[7]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Computer_Organization/exp6/output_files/exp6.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 463 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 26 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 421 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Sun May 14 17:08:58 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:03
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "switch_buttons[2]"
+    Warning (15610): No output dependent on input pin "switch_buttons[1]"
+    Warning (15610): No output dependent on input pin "switch_buttons[0]"
+Info (21057): Implemented 254 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 29 input pins
+    Info (21059): Implemented 49 output pins
+    Info (21061): Implemented 176 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4641 megabytes
+    Info: Processing ended: Sun May 14 18:00:00 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+

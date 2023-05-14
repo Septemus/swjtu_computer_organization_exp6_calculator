@@ -24,10 +24,10 @@ module exp5(
 	//keymodule km(.clk(clk),.KEY_R(KEY_R),.KEY_C(KEY_C),.out(key_out),.clr(key_clr));
 	//segment_displays sd(.clk(clk),.N(N),.seg(codeout),.sel(sel));
 	assign DATA_INPUT=key_out;
-	wire [31:0]second_counter;
+	//wire [31:0]second_counter;
 	wire [7:0] X,Y;
 	//assign N={X,16'h0000,Y};
-	count_second cs (clk,second_counter);
-	pc_function pf  (clk,clr,second_counter,DATA_INPUT,M,PC,Y,res_alu);
+	//count_second cs (clk,second_counter);
+	pc_function pf  (clk,clr,DATA_INPUT,M,PC,Y,res_alu);
 	reg_function rf (clk,wr,rd,RA,DATA_INPUT,R0,R1,R2,R3,X,res_alu);
 endmodule
