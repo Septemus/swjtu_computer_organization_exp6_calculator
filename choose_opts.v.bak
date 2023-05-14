@@ -1,0 +1,42 @@
+module choose_opts(
+	input [7:0]R0,
+	input [7:0]R1,
+	input [7:0]R2,
+	input [7:0]R3,
+	input [7:0]PC,
+	input [3:0]sout,
+	input [1:0]from_pc,
+	output [15:0] res
+);
+	reg [7:0]opt1,opt2;
+	always@(*)
+	begin
+		if(from_pc!=0)
+		begin
+			if(from_pc[0])
+			begin
+				opt1<=pc;
+			end
+			if(from_pc[1])
+			begin
+				opt2<=pc;
+			end
+		end
+		else
+		begin		
+			case(sout[3:2])
+				2'b00:opt1<=R0;
+				2'b01:opt1<=R1;
+				2'b10:opt1<=R2;
+				2'b11:opt1<=R3;
+			endcase
+			case(sout[1:0])
+				2'b00:opt2<=R0;
+				2'b01:opt2<=R1;
+				2'b10:opt2<=R2;
+				2'b11:opt2<=R3;
+			endcase
+		end
+	end
+	assign res={opt1,opt2};
+endmodule
