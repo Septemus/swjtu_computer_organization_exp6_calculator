@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect -448 40 -280 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -448 72 -280 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "key_r[3..0]" (rect 5 0 60 12)(font "Arial" ))
+	(text "key_r[3..0]" (rect 5 0 59 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect -448 104 -280 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "key_clr" (rect 5 0 42 12)(font "Arial" ))
+	(text "key_clr" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect -240 40 -72 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RA[1..0]" (rect 5 0 47 12)(font "Arial" ))
+	(text "RA[1..0]" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -91,7 +91,7 @@ applicable agreement for further details.
 	(input)
 	(rect -232 72 -64 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "wr" (rect 5 0 16 12)(font "Arial" ))
+	(text "wr" (rect 5 0 15 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -108,7 +108,7 @@ applicable agreement for further details.
 	(input)
 	(rect -232 104 -64 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "rd" (rect 5 0 15 12)(font "Arial" ))
+	(text "rd" (rect 5 0 14 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -125,7 +125,7 @@ applicable agreement for further details.
 	(input)
 	(rect -448 136 -280 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "M[1..0]" (rect 5 0 40 12)(font "Arial" ))
+	(text "M[1..0]" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -159,7 +159,7 @@ applicable agreement for further details.
 	(input)
 	(rect -8 136 160 152)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "cin" (rect 5 0 20 12)(font "Arial" ))
+	(text "cin" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -176,7 +176,7 @@ applicable agreement for further details.
 	(input)
 	(rect 216 136 416 152)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
-	(text "switch_buttons[2..0]" (rect 5 0 105 12)(font "Arial" ))
+	(text "switch_buttons[2..0]" (rect 5 0 104 12)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -193,7 +193,7 @@ applicable agreement for further details.
 	(input)
 	(rect -8 40 160 56)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "flag" (rect 5 0 24 12)(font "Arial" ))
+	(text "flag" (rect 5 0 23 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -210,7 +210,7 @@ applicable agreement for further details.
 	(input)
 	(rect -8 72 160 88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "cr[4..0]" (rect 5 0 41 12)(font "Arial" ))
+	(text "cr[4..0]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -227,7 +227,7 @@ applicable agreement for further details.
 	(input)
 	(rect -400 560 -232 576)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pc_clr" (rect 5 0 35 12)(font "Arial" ))
+	(text "pc_clr" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -971,18 +971,6 @@ applicable agreement for further details.
 	(pt 280 424)
 )
 (connector
-	(text "alu_N[23..16]" (rect 184 440 250 452)(font "Arial" ))
-	(pt 184 456)
-	(pt 520 456)
-	(bus)
-)
-(connector
-	(text "alu_N[31..24]" (rect 184 456 250 468)(font "Arial" ))
-	(pt 184 472)
-	(pt 520 472)
-	(bus)
-)
-(connector
 	(text "operators[15..0]" (rect -72 456 5 468)(font "Arial" ))
 	(pt -48 472)
 	(pt -32 472)
@@ -1020,6 +1008,18 @@ applicable agreement for further details.
 	(text "res_alu[7..0]" (rect 194 472 255 484)(font "Arial" ))
 	(pt 184 488)
 	(pt 248 488)
+	(bus)
+)
+(connector
+	(text "alu_N[23..16]" (rect 194 456 260 468)(font "Arial" ))
+	(pt 184 472)
+	(pt 520 472)
+	(bus)
+)
+(connector
+	(text "alu_N[31..24]" (rect 184 440 250 452)(font "Arial" ))
+	(pt 184 456)
+	(pt 520 456)
 	(bus)
 )
 (junction (pt 520 440))

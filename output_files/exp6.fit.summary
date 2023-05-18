@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun May 14 18:35:25 2023
+Fitter Status : Successful - Wed May 17 09:21:04 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : exp6
 Top-level Entity Name : exp6
 Family : Cyclone III
 Device : EP3C40F780C8
 Timing Models : Final
-Total logic elements : 380 / 39,600 ( < 1 % )
+Total logic elements : 381 / 39,600 ( < 1 % )
     Total combinational functions : 353 / 39,600 ( < 1 % )
     Dedicated logic registers : 206 / 39,600 ( < 1 % )
 Total registers : 206

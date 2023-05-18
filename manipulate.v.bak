@@ -21,7 +21,7 @@ module manipulate(
 				3'b011:ans<={8'b0000_0000,X^Y};
 				3'b100:
 				begin 
-					ans<=X+Y+(cin?1'b0:1'b1);
+					ans<=X+Y+cin;
 				end
 				3'b101:ans<={8'b0000_0000,X[6:0],1'b0};
 				3'b110:ans<={8'b0000_0000,1'b0,X[7:1]};
