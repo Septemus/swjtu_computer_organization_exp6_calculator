@@ -1,7 +1,7 @@
 > # 0 关于
 
 欢迎到我的博客文章查看更多内容😄：
-https://septemusblog.space/computer_organization_exp6/
+https://septemus.github.io/computer_organization_exp6/
 
 
 
